@@ -1,0 +1,55 @@
+html,
+body,
+ul,
+ol {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.flags {
+  height: 40px;
+  position: relative;
+  background: repeating-linear-gradient(90deg, red, red 20px, #3dc43b 20px, #3dc43b 40px, yellow 40px, yellow 60px);
+}
+
+.flags::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+
+.header {
+  background: #3dc43b;
+}
+
+.title {
+  position: relative;
+  font-family: "Holtwood One SC", serif;
+  background: -webkit-linear-gradient(left, red, yellow);
+  background: -o-linear-gradient(right, red, yellow);
+  background: -moz-linear-gradient(right, red, yellow);
+  background: linear-gradient(to right, red, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  text-align: center;
+}
+
+.photo {
+  height: 200px;
+}
+
+.archive {
+  background: yellow;
+  border: solid #3dc43b 2px;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */
