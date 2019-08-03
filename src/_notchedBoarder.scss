@@ -1,0 +1,60 @@
+$r: 2em; 
+$minHeight:10em;
+$maxWidth:15em;
+.box {
+  position: relative;
+  outline: solid 2px;
+  max-width: $maxWidth;
+  min-height: $minHeight;
+  overflow:hidden; //clip the top of the circle
+  border-radius: 1em;
+  padding:$r;
+  // background-color:#95a;
+}
+.box-lt{
+  // z-index:-1;
+  position: absolute;
+  padding: $r;
+  content: '';
+  margin: -$r;
+  border-radius: 50%;
+  box-shadow: 0 0 0 7em rgba(#95a, .75);
+}
+.box-rt{
+  z-index:-1;
+  position: absolute;
+  top:0;
+  right:0;
+  padding: $r;
+  content: '';
+  margin: -$r;
+  border-radius: 50%;
+  box-shadow: 0 0 0 7em rgba(#95a, .75);
+}
+.box-rb{
+  z-index:-1;
+  position: absolute;
+  bottom:0;
+  right:0;
+  padding: 2em;
+
+  content: '';
+  margin: -$r;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1em rgba(#95a, .75);
+}
+.box-lb{ 
+  z-index:-2;
+  position: absolute;
+  bottom:0;
+  left:0;
+  padding: 2em;
+  content: '';
+  margin: -$r;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2em rgba(#95a, .75);
+}
+.sideNav{
+background:#95a;
+  border-radius:5em;
+}

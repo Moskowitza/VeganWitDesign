@@ -25,6 +25,79 @@ ol {
   background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
 }
 
+.topNav {
+  background: #3dc43b;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.box {
+  position: relative;
+  outline: solid 2px;
+  max-width: 15em;
+  min-height: 10em;
+  overflow: hidden;
+  border-radius: 1em;
+  padding: 2em;
+}
+
+.box-lt {
+  position: absolute;
+  padding: 2em;
+  content: "";
+  margin: -2em;
+  border-radius: 50%;
+  box-shadow: 0 0 0 7em rgba(153, 85, 170, 0.75);
+}
+
+.box-rt {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2em;
+  content: "";
+  margin: -2em;
+  border-radius: 50%;
+  box-shadow: 0 0 0 7em rgba(153, 85, 170, 0.75);
+}
+
+.box-rb {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 2em;
+  content: "";
+  margin: -2em;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1em rgba(153, 85, 170, 0.75);
+}
+
+.box-lb {
+  z-index: -2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  content: "";
+  margin: -2em;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2em rgba(153, 85, 170, 0.75);
+}
+
+.sideNav {
+  background: #95a;
+  border-radius: 5em;
+}
+
 .header {
   background: #3dc43b;
 }

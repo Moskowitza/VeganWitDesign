@@ -1,14 +1,16 @@
 @import 'reset';
 @import 'colors';
 @import 'flags';
-
+@import 'fonts';
+@import 'topNav';
+@import 'notchedBoarder';
 .header {
   background: $green;
 }
 
 .title {
   position: relative;
-  font-family: 'Holtwood One SC', serif;
+  font-family: $header;
   background: -webkit-linear-gradient(left, red, yellow);
   background: -o-linear-gradient(right, red, yellow);
   background: -moz-linear-gradient(right, red, yellow);
@@ -18,8 +20,7 @@
   font-size: 80px;
   text-align: center;
 }
-.title:after {
-}
+
 .photo {
   height: 200px;
 }
