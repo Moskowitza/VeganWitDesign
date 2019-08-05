@@ -44,17 +44,21 @@ ol {
   max-width: 15em;
   min-height: 10em;
   overflow: hidden;
-  border-radius: 1em;
+  border-radius: 8rem;
   padding: 2em;
+  background-color: #95a;
 }
 
 .box-lt {
+  border-right-style: solid;
   position: absolute;
+  top: 0;
+  left: 0;
   padding: 2em;
   content: "";
   margin: -2em;
   border-radius: 50%;
-  box-shadow: 0 0 0 7em rgba(153, 85, 170, 0.75);
+  box-shadow: 0 0 0 7em pink;
 }
 
 .box-rt {
@@ -91,11 +95,6 @@ ol {
   margin: -2em;
   border-radius: 50%;
   box-shadow: 0 0 0 2em rgba(153, 85, 170, 0.75);
-}
-
-.sideNav {
-  background: #95a;
-  border-radius: 5em;
 }
 
 .header {

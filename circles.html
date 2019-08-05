@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .wrapper {
+      background: maroon;
+      height: auto;
+    }
+    .container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      margin: 50px auto;
+      background: pink;
+      border: red 5px solid;
+    }
+    .circle-topLeft {
+      position: absolute;
+      z-index: 1;
+      top: -55px;
+      left: -55px;
+      height: 100px;
+      width: 100px;
+      border-radius: 0 50% 50% 50%;
+      border: 5px solid red;
+      border-top-color: white;
+      border-bottom-color: white;
+      border-left-color: white;
+      background: white;
+      -webkit-transform: rotate(45deg);
+    }
+    .circle-topRight {
+      position: absolute;
+      z-index: 1;
+      top: -60px;
+      right: -60px;
+      height: 100px;
+      width: 100px;
+      border-radius: 0 50% 50% 50%;
+      border: 5px solid red;
+      border-top-color: maroon;
+      border-bottom-color: maroon;
+      border-left-color: maroon;
+      background: maroon;
+      -webkit-transform: rotate(135deg);
+    }
+    .circle-bottomRight {
+      position: absolute;
+      z-index: 1;
+      bottom: -60px;
+      right: -60px;
+      height: 100px;
+      width: 100px;
+      border-radius: 0 50% 50% 50%;
+      border: 5px solid red;
+      border-top-color: maroon;
+      border-bottom-color: maroon;
+      border-left-color: maroon;
+      background: maroon;
+      -webkit-transform: rotate(225deg);
+    }
+    .circle-bottomLeft {
+      position: absolute;
+      z-index: 1;
+      bottom: -60px;
+      left: -60px;
+      height: 100px;
+      width: 100px;
+      border-radius: 0 50% 50% 50%;
+      border: 5px solid red;
+      border-top-color: maroon;
+      border-bottom-color: maroon;
+      border-left-color: maroon;
+      background: maroon;
+      -webkit-transform: rotate(-45deg);
+    }
+    ul {
+      list-style: none;
+      margin: auto;
+      padding: 100px;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <ul>
+          <li>CheeseSteak</li>
+          <li>Pizza</li>
+          <li>Burger</li>
+          <li>Burrito</li>
+          <li>Sandwiches</li>
+        </ul>
+        <div class="circle-topLeft"></div>
+        <div class="circle-topRight"></div>
+        <div class="circle-bottomRight"></div>
+        <div class="circle-bottomLeft"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -2,23 +2,27 @@ $r: 2em;
 $minHeight:10em;
 $maxWidth:15em;
 .box {
+  // z-index:-1;
   position: relative;
   outline: solid 2px;
   max-width: $maxWidth;
   min-height: $minHeight;
   overflow:hidden; //clip the top of the circle
-  border-radius: 1em;
+  border-radius: 8rem;
   padding:$r;
-  // background-color:#95a;
+  background-color:#95a;
 }
 .box-lt{
   // z-index:-1;
+      border-right-style: solid;
   position: absolute;
+  top:0;
+  left:0;
   padding: $r;
   content: '';
   margin: -$r;
   border-radius: 50%;
-  box-shadow: 0 0 0 7em rgba(#95a, .75);
+  box-shadow: 0 0 0 7em rgba(pink, 1);
 }
 .box-rt{
   z-index:-1;
@@ -54,7 +58,8 @@ $maxWidth:15em;
   border-radius: 50%;
   box-shadow: 0 0 0 2em rgba(#95a, .75);
 }
-.sideNav{
-background:#95a;
-  border-radius:5em;
-}
+// .sideNav{
+//   background:#95a;
+//   border-radius:5em;
+ 
+// }
