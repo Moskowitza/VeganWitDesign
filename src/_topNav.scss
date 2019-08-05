@@ -1,12 +1,13 @@
 @import 'colors';
 .topNav {
   background: $green;
+  font-family:$candy;
  
 }
 .nav-list{
   list-style-type: none;
-    display: inline-block;
-    }
+  display: inline-block;
+}
 .nav-item{
   display: inline-block;
 }

@@ -10,7 +10,7 @@ ol {
 .flags {
   height: 40px;
   position: relative;
-  background: repeating-linear-gradient(90deg, red, red 20px, #3dc43b 20px, #3dc43b 40px, yellow 40px, yellow 60px);
+  background: repeating-linear-gradient(90deg, #c43b3b, #c43b3b 20px, #3d8b37 20px, #3d8b37 40px, #fbd218 40px, #fbd218 60px);
 }
 
 .flags::before {
@@ -25,8 +25,21 @@ ol {
   background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
 }
 
+.header {
+  font-family: "Holtwood One SC", serif;
+  background: -webkit-linear-gradient(left, red, yellow);
+  background: -o-linear-gradient(right, red, yellow);
+  background: -moz-linear-gradient(right, red, yellow);
+  background: linear-gradient(to right, red, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 70px;
+  text-align: center;
+}
+
 .topNav {
-  background: #3dc43b;
+  background: #3d8b37;
+  font-family: "Emilys Candy", cursive;
 }
 
 .nav-list {
@@ -38,7 +51,7 @@ ol {
   display: inline-block;
 }
 
-.wrapper {
+.menu {
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -48,20 +61,20 @@ ol {
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  margin-bottom: -10px;
+  margin-bottom: -15px;
 }
 
 .bottom {
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  margin-top: -10px;
+  margin-top: -15px;
 }
 
 .container {
   background: pink;
-  margin: 0 10px 0 10px;
-  padding: 5px;
+  margin: 0 15px 0 15px;
+  padding: 10px;
   border: 5px double red;
   width: auto;
 }
@@ -97,31 +110,8 @@ ul {
   list-style: none;
 }
 
-.header {
-  background: #3dc43b;
-}
-
-.title {
-  position: relative;
-  font-family: "Holtwood One SC", serif;
-  background: -webkit-linear-gradient(left, red, yellow);
-  background: -o-linear-gradient(right, red, yellow);
-  background: -moz-linear-gradient(right, red, yellow);
-  background: linear-gradient(to right, red, yellow);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 80px;
-  text-align: center;
-}
-
 .photo {
   height: 200px;
-}
-
-.archive {
-  background: yellow;
-  border: solid #3dc43b 2px;
-  padding: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */

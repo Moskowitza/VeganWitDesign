@@ -1,32 +1,11 @@
 @import 'reset';
 @import 'colors';
 @import 'flags';
+@import 'header';
 @import 'fonts';
 @import 'topNav';
 @import 'notchedBoarder';
-.header {
-  background: $green;
-}
-
-.title {
-  position: relative;
-  font-family: $header;
-  background: -webkit-linear-gradient(left, red, yellow);
-  background: -o-linear-gradient(right, red, yellow);
-  background: -moz-linear-gradient(right, red, yellow);
-  background: linear-gradient(to right, red, yellow);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 80px;
-  text-align: center;
-}
 
 .photo {
   height: 200px;
-}
-
-.archive {
-  background: yellow;
-  border: solid $green 2px;
-  padding: 10px;
 }
