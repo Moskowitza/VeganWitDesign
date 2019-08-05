@@ -1,12 +1,12 @@
 $r: 2em; 
 $minHeight:10em;
 $maxWidth:15em;
-    .wrapper {
+.wrapper {
       display: flex;
       flex-direction: column;
       width: 300px;
-    }
-    .top {
+}
+.top {
       z-index: 1;
       display: flex;
       justify-content: space-between;
@@ -50,3 +50,4 @@ $maxWidth:15em;
     ul {
       list-style: none;
     }
+      
